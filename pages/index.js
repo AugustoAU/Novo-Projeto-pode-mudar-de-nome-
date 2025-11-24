@@ -168,7 +168,7 @@ main .input{
           </div>
 
           <div className="botao">
-            <a href="aurus.tec.br">
+            <a href="https://novo-ruby.vercel.app/">
               <button type="button">Continuar</button>
             </a>
           </div>
