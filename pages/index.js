@@ -19,7 +19,7 @@ export default function Home() {
     const data = await res.json();
 
     if (data.success) {
-      window.location.href = "/postes.js"
+      window.location.href = "/postes"
     } else {
       alert("Usuário ou senha incorretos");
     }
