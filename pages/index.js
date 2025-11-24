@@ -1,7 +1,28 @@
 import Head from "next/head";
 
-
 export default function Home() {
+      async function handleLogin(e) {
+    e.preventDefault();
+
+    const username = e.target.username.value;
+    const password = e.target.password.value;
+
+    const res = await fetch("/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username, password }),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      alert("Login bem-sucedido!");
+    } else {
+      alert("Usuário ou senha incorretos");
+    }
+  }
   return (
     <>
       <Head>
@@ -124,7 +145,7 @@ main .input{
       <main className="container">
         <h1>login</h1>
 
-        <form action="">
+        <form onSubmit={handleLogin}>
           <div className="input">
             <input
               type="text"
