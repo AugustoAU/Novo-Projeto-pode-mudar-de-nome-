@@ -1,4 +1,4 @@
-# DebugMe
+# AurusLabs
 
 No começo eu estava sem ideia para este projeto pessoal, mas agora já sei o que quero desenvolver. A proposta é criar uma página onde qualquer pessoa possa postar dúvidas, e a comunidade possa responder e ajudar.
 Eu sei que já existem várias plataformas desse tipo, mas este projeto é apenas para estudo, para que eu possa aprender melhor como tudo funciona.
