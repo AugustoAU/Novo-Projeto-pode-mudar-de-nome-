@@ -19,7 +19,7 @@ export default function Home() {
     const data = await res.json();
 
     if (data.success) {
-      alert("Login bem-sucedido!");
+      window.location.href = "./postes.js";
     } else {
       alert("Usuário ou senha incorretos");
     }
@@ -168,9 +168,7 @@ main .input{
           </div>
 
           <div className="botao">
-            <a href="https://novo-ruby.vercel.app/">
-              <button type="button">Continuar</button>
-            </a>
+              <button type="submit">Continuar</button>
           </div>
         </form>
       </main>
