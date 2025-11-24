@@ -1,5 +1,5 @@
-export default function postes() {
-  return (
-    <h1>Bem-vindo a pagina de postes</h1>
-  );
+function postes() {
+    return <h1>Bem vindo! admin</h1>
 }
+
+export default postes;
